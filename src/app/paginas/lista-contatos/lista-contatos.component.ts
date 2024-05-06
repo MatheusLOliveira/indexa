@@ -11,19 +11,19 @@ import { ContatoService } from '../../services/contato.service';
 import { Contato } from '../../componentes/contato/contato';
 
 @Component({
-  selector: 'app-lista-contatos',
-  standalone: true,
-  templateUrl: './lista-contatos.component.html',
-  styleUrl: './lista-contatos.component.css',
-  imports: [
-    ContainerComponent,
-    CabecalhoComponent,
-    SeparadorComponent,
-    ContatoComponent,
-    FormsModule,
-    FormularioContatoComponent,
-    RouterLink
-  ],
+    selector: 'app-lista-contatos',
+    standalone: true,
+    templateUrl: './lista-contatos.component.html',
+    styleUrl: './lista-contatos.component.css',
+    imports: [
+        ContainerComponent,
+        CabecalhoComponent,
+        SeparadorComponent,
+        ContatoComponent,
+        FormsModule,
+        FormularioContatoComponent,
+        RouterLink,
+    ]
 })
 export class ListaContatosComponent implements OnInit {
   alfabeto: string = 'abcdefghijklmnopqrstuvwxyz';
