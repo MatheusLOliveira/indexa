@@ -5,6 +5,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ContatoService } from '../../services/contato.service';
 import { SeparadorComponent } from "../../componentes/separador/separador.component";
+import { CabecalhoComponent } from "../../componentes/cabecalho/cabecalho.component";
 
 @Component({
     selector: 'app-perfil-contato',
@@ -14,7 +15,8 @@ import { SeparadorComponent } from "../../componentes/separador/separador.compon
     imports: [
         ContainerComponent,
         RouterLink,
-        SeparadorComponent
+        SeparadorComponent,
+        CabecalhoComponent
     ]
 })
 export class PerfilContatoComponent implements OnInit {
